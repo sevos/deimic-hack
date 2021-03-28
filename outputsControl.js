@@ -1,8 +1,15 @@
+// This script should be installed in "Every 5 minutes" timer in Deimic One
+//
+// On getOuts command the TCP server responds with a string of expected output values
+// delimited by colons, i.e.:
+// 1:0:0:0:0:0
+// The exact string length is expected to be 77 characters to cover all 39 DEIMIC One outputs
+
 var serverIp = "192.168.1.80";
-var totalTime = 300;
+var totalTime = 300; // seconds
  
-var sleepTime = 150;
-var requestTime = 100;
+var sleepTime = 150; // ms
+var requestTime = 100; // ms
 
 var i, currentTime;
 
